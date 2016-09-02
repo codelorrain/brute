@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#607D8B</color>
+    <color name="primary_dark">#455A64</color>
+    <color name="primary_light">#CFD8DC</color>
+    <color name="accent">#FF5722</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+
+    <color name="dark_text">#4e4e4e</color>
+    <color name="accent_ripple">#f2877f</color>
+    <color name="dark">#212121</color>
+
+    <color name="navigation_bar">#aa06060c</color>
+    <color name="secondary_light">#03a9f4</color>
+    <color name="navigation_color">#fff0f0f0</color>
+    <color name="background_white">#f3f3f5</color>
+
+
+    <color name="dark_black">#101010</color>
+    <color name="transparent_gray">#39000000</color>
+    <color name="mid_gray">#838383</color>
+    <color name="gray">#33222222</color>
+    <color name="ambient_white">#FDFDFD</color>
+    <color name="dirty_white">#d6d6d6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="cyan">#80deea</color>
+    <color name="teal">#AA009688</color>
+    <color name="purple">#CE93D8</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#2de411</color>
+    <color name="light_blue">#2196f3</color>
+
+
+    <color name="orange">#DC582A</color>
+    <color name="dark_orange">#9E3F1E</color>
+
+
+</resources>
