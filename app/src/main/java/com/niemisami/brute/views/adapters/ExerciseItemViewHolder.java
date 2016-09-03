@@ -1,4 +1,4 @@
-package com.niemisami.brute.views;
+package com.niemisami.brute.views.adapters;
 
 import android.support.v7.widget.RecyclerView;
 
@@ -20,14 +20,14 @@ public class ExerciseItemViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setReps(int reps) {
-//        mExerciseItemView.setReps(reps);
+        mExerciseItemView.setReps(reps);
     }
 
     public void setSets(int sets) {
-//        mExerciseItemView.setSets(sets);
+        mExerciseItemView.setSets(sets);
     }
 
     public void setWeight(float weight) {
-//        mExerciseItemView.setWeight(weight);
+        mExerciseItemView.setWeight(weight);
     }
 }

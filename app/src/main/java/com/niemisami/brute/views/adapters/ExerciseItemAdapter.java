@@ -1,4 +1,4 @@
-package com.niemisami.brute.views;
+package com.niemisami.brute.views.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,7 +6,6 @@ import android.view.ViewGroup;
 
 import com.niemisami.brute.models.Exercise;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

@@ -1,11 +1,9 @@
-package com.niemisami.brute.views;
+package com.niemisami.brute.views.adapters;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,7 +14,7 @@ import com.niemisami.brute.R;
  */
 public class ExerciseItemView extends LinearLayout {
 
-    public TextView mNameView;
+    public TextView mNameView, mRepsView, mWeightView, mSetsView;
 
     public ExerciseItemView(Context context) {
         this(context, null);
@@ -34,9 +32,21 @@ public class ExerciseItemView extends LinearLayout {
     private void setupView() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.exercise_item, this);
         mNameView = (TextView) view.findViewById(R.id.exercise_item_label);
+
     }
 
     public void setExerciseName(String exerciseName) {
         mNameView.setText(exerciseName);
+    }
+
+    public void setReps(int reps) {
+//        mRepsView.setText(Integer.toString(reps));
+    }
+    public void setSets(int sets) {
+//        mSetsView.setText(sets);
+    }
+
+    public void setWeight(float weight) {
+//        mWeightView.setText(String.format("%.2f", weight));
     }
 }

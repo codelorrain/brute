@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/exercise_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_extended"
+        android:background="@color/primary"
+        android:paddingBottom="@dimen/app_bar_title_bottom_padding"
+        android:paddingEnd="@dimen/margin_medium"
+        android:paddingStart="@dimen/app_bar_extended"
+        android:paddingTop="@dimen/margin_medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Bench press"
+            android:textAllCaps="true"
+            android:textColor="@color/ambient_white"
+            android:textSize="@dimen/text_toolbar_title"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_height="96dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/bench_press"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/exercise_information_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/description_area_height"
+        android:layout_below="@id/exercise_title_container"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/app_bar_extended"
+        android:layout_marginTop="@dimen/margin_smaller">
+
+
+        <TextView
+            android:id="@+id/exercise_rep_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-light"
+            android:text="Reps"
+            android:textSize="@dimen/text_large"/>
+
+
+        <TextView
+            android:id="@+id/exercise_rep_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/exercise_rep_label"
+            android:fontFamily="sans-serif-light"
+            android:paddingStart="@dimen/margin_medium"
+            android:text="0"
+            android:textSize="@dimen/text_toolbar_title"/>
+
+        <Button
+            android:id="@+id/subtract_rep_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="@string/subtract_sign"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text_huge"/>
+
+        <Button
+            android:id="@+id/add_rep_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/subtract_rep_button"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="@string/add_sign"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text_huge"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

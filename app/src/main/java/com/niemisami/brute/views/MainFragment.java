@@ -1,16 +1,21 @@
 package com.niemisami.brute.views;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.niemisami.brute.MainActivity;
 import com.niemisami.brute.R;
 import com.niemisami.brute.models.Exercise;
+import com.niemisami.brute.views.adapters.ExerciseItemAdapter;
+import com.niemisami.brute.views.excercise_information.ExerciseFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +24,9 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MainFragment extends Fragment {
+public class MainFragment extends Fragment implements OnBruteFabClicklistener {
+
+    private static final String TAG = MainFragment.class.getSimpleName();
 
 
     private RecyclerView mRecyclerView;
@@ -55,11 +62,21 @@ public class MainFragment extends Fragment {
         mRecyclerView.setHasFixedSize(true); // improves recycler view's performance
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
 
+        mRecyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                long exerciseID = mAdapter.getItemId(position);
+                ((MainActivity) getActivity()).startExerciseFragment(exerciseID);
+            }
+        }));
+
+
     }
 
     private void fetchExercises() {
         mExercises = new ArrayList<>();
         Exercise test = new Exercise();
+        test.setID(0);
         test.setName("Testiliike");
         mExercises.add(test);
         mExercises.add(test);
@@ -73,4 +90,8 @@ public class MainFragment extends Fragment {
     }
 
 
+    @Override
+    public void onBruteFabClicked() {
+        Log.d(TAG, "onBruteFabClicked: ");
+    }
 }

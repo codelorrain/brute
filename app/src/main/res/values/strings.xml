@@ -3,4 +3,7 @@
     <string name="about">About</string>
 
     <string name="excercise">Excercise</string>
+    <string name="add_sign">+</string>
+    <string name="subtract_sign">-</string>
+
 </resources>
