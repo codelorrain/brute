@@ -9,7 +9,9 @@
     android:layout_below="@+id/reading_time_view"
     android:layout_marginEnd="@dimen/margin_smaller"
     android:layout_marginStart="@dimen/margin_smaller"
-    android:layout_marginTop="@dimen/margin_smaller">
+    android:layout_marginTop="@dimen/margin_tiny"
+    android:layout_marginBottom="@dimen/margin_tiny"
+    >
 
     <RelativeLayout
         android:id="@+id/excercise_item_button"
