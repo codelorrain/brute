@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/server_sync_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/patient_name_view"
+    android:layout_alignParentEnd="true"
+    android:layout_alignStart="@+id/reading_time_view"
+    android:layout_below="@+id/reading_time_view"
+    android:layout_marginEnd="@dimen/margin_smaller"
+    android:layout_marginStart="@dimen/margin_smaller"
+    android:layout_marginTop="@dimen/margin_tiny"
+    android:layout_marginBottom="@dimen/margin_tiny"
+    >
+
+    <RelativeLayout
+        android:id="@+id/excercise_item_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:padding="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/exercise_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/excercise"
+            android:textSize="@dimen/text_normal"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/exercise_item_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_exercise" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

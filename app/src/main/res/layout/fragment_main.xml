@@ -1,15 +1,24 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".views.MainFragment">
 
     <TextView
+        android:id="@+id/exercises_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="@dimen/text_huge"
         android:fontFamily="sans-serif-light"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_huge" />
 
-</FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/exercise_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/exercises_title">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
