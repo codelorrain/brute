@@ -12,19 +12,19 @@ import com.niemisami.brute.R;
 /**
  * Created by sami on 9/3/16.
  */
-public class ExerciseItemView extends LinearLayout {
+public class ExerciseRecyclerViewItem extends LinearLayout {
 
     public TextView mNameView, mRepsView, mWeightView, mSetsView;
 
-    public ExerciseItemView(Context context) {
+    public ExerciseRecyclerViewItem(Context context) {
         this(context, null);
     }
 
-    public ExerciseItemView(Context context, AttributeSet attrs) {
+    public ExerciseRecyclerViewItem(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public ExerciseItemView(Context context, AttributeSet attrs, int defStyle) {
+    public ExerciseRecyclerViewItem(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         setupView();
     }

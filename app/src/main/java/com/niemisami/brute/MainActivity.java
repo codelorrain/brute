@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.niemisami.brute.models.Exercise;
 import com.niemisami.brute.views.MainFragment;
 import com.niemisami.brute.views.OnBruteFabClicklistener;
 import com.niemisami.brute.views.excercise_information.ExerciseFragment;
@@ -64,15 +63,12 @@ public class MainActivity extends AppCompatActivity {
     public void startExerciseFragment(long id) {
 
         FragmentManager manager = getSupportFragmentManager();
-        if (manager.findFragmentById(R.id.container_body) == null) {
-//            MainFragment fragment = new MainFragment();
-
-            ExerciseFragment fragment = ExerciseFragment.newInstance(id);
-            mOnBruteFabClicklistener = fragment;
-            manager.beginTransaction()
-                    .add(R.id.container_body, fragment)
-                    .commit();
-        }
+        ExerciseFragment fragment = ExerciseFragment.newInstance(id);
+        mOnBruteFabClicklistener = fragment;
+        manager.beginTransaction()
+                .replace(R.id.container_body, fragment)
+                .addToBackStack(null)
+                .commit();
 
     }
 }

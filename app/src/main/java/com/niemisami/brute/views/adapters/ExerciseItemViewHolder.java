@@ -8,26 +8,26 @@ import android.support.v7.widget.RecyclerView;
 public class ExerciseItemViewHolder extends RecyclerView.ViewHolder {
 
     private static final String TAG = ExerciseItemViewHolder.class.getSimpleName();
-    private ExerciseItemView mExerciseItemView;
+    private ExerciseRecyclerViewItem mExerciseRecyclerViewItem;
 
-    public ExerciseItemViewHolder(ExerciseItemView exerciseItemView) {
-        super(exerciseItemView);
-        mExerciseItemView = exerciseItemView;
+    public ExerciseItemViewHolder(ExerciseRecyclerViewItem exerciseRecyclerViewItem) {
+        super(exerciseRecyclerViewItem);
+        mExerciseRecyclerViewItem = exerciseRecyclerViewItem;
     }
 
     public void setExerciseName(String name) {
-        mExerciseItemView.setExerciseName(name);
+        mExerciseRecyclerViewItem.setExerciseName(name);
     }
 
     public void setReps(int reps) {
-        mExerciseItemView.setReps(reps);
+        mExerciseRecyclerViewItem.setReps(reps);
     }
 
     public void setSets(int sets) {
-        mExerciseItemView.setSets(sets);
+        mExerciseRecyclerViewItem.setSets(sets);
     }
 
     public void setWeight(float weight) {
-        mExerciseItemView.setWeight(weight);
+        mExerciseRecyclerViewItem.setWeight(weight);
     }
 }

@@ -1,7 +1,6 @@
 package com.niemisami.brute.views;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,7 +14,6 @@ import com.niemisami.brute.MainActivity;
 import com.niemisami.brute.R;
 import com.niemisami.brute.models.Exercise;
 import com.niemisami.brute.views.adapters.ExerciseItemAdapter;
-import com.niemisami.brute.views.excercise_information.ExerciseFragment;
 
 import java.util.ArrayList;
 import java.util.List;

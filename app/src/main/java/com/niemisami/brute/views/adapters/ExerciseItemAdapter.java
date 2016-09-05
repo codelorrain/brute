@@ -29,8 +29,8 @@ public class ExerciseItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        ExerciseItemView exerciseItemView = new ExerciseItemView(mContext);
-        return new ExerciseItemViewHolder(exerciseItemView);
+        ExerciseRecyclerViewItem exerciseRecyclerViewItem = new ExerciseRecyclerViewItem(mContext);
+        return new ExerciseItemViewHolder(exerciseRecyclerViewItem);
     }
 
     @Override
